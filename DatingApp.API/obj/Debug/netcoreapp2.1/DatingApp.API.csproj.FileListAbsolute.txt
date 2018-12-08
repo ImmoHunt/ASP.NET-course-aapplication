@@ -12,3 +12,17 @@ C:\Users\Lenovo\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.1\DatingApp.API.Ra
 C:\Users\Lenovo\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.1\DatingApp.API.dll
 C:\Users\Lenovo\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.1\DatingApp.API.pdb
 C:\Users\Lenovo\DatingApp\DatingApp.API\obj\Debug\netcoreapp2.1\DatingApp.API.csprojAssemblyReference.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.deps.json
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.runtimeconfig.json
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.runtimeconfig.dev.json
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.dll
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\bin\Debug\netcoreapp2.1\DatingApp.API.pdb
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.csprojAssemblyReference.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.csproj.CoreCompileInputs.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorAssemblyInfo.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorAssemblyInfo.cs
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.AssemblyInfoInputs.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.AssemblyInfo.cs
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.RazorTargetAssemblyInfo.cache
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.dll
+C:\users\lenovo\datingapp\asp.net-course-aapplication\datingapp.api\obj\Debug\netcoreapp2.1\DatingApp.API.pdb
