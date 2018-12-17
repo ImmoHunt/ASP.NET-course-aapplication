@@ -11,7 +11,7 @@ namespace DatingApp.API.Controllers
     //  http://localhost:5000/app/values
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : ControllerBase // it inherits from this base class for controllers
     {
         private readonly DataContext _context;
 
