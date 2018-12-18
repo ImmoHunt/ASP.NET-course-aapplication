@@ -3,6 +3,7 @@ using DatingApp.API.Data;
 using DatingApp.API.Models;
 using DatingApp.API.DTOs;
 using System.Threading.Tasks;
+using System.Security.Claims;
 
 namespace DatingApp.API.Controllers
 {
@@ -19,10 +20,9 @@ namespace DatingApp.API.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDtos userForRegisterDtos)
         {
-            // validate request in the future
 
             userForRegisterDtos.Username = userForRegisterDtos.Username.ToLower();
-            
+
             if(await _repo.UserExists(userForRegisterDtos.Username))
                 return BadRequest("Username already exists");
             var userToCreate = new User
@@ -33,6 +33,21 @@ namespace DatingApp.API.Controllers
 
             return StatusCode(201); // gotta fix this later when we get individual user
         }
+        
+        [HttpPost("login")]
+        public async Task<IActionREsult> Login(UserForLoginDtos userForLoginDtos)
+        {
+            var userFromRepo = await _repo.Login(userForLoginDtos.Username, userForLoginDtos.Password);
 
+            if(userFromRepo == null)
+                return Unauthorized(); // to not give them hint that this user exists but the password is incorrect cause they can try brute force password
+            
+            //we will build up a token will contain user id and user's username
+            var claims = new[]
+            {
+                new Claim()
+            }
+
+        }
     }
 }
