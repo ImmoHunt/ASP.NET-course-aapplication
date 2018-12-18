@@ -8,7 +8,7 @@ namespace DatingApp.API.Data
     public class AuthRepository : IAuthRepository
     {
         private readonly DataContext _context;
-        public ClassName(DataContext context)
+        public AuthRepository(DataContext context)
         {
             _context = context;
         }
@@ -27,7 +27,7 @@ namespace DatingApp.API.Data
             return user;
         }
 
-        private bool VerifyPasswordHash(string password, object passwordHash, object passwordSalt)
+        private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
             {
@@ -48,10 +48,10 @@ namespace DatingApp.API.Data
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
 
-            await _context.Users.AddSync.AddAsync(user);
+            await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
             
-            return User;
+            return user;
         }
 
         private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
