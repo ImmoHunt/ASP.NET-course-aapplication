@@ -48,7 +48,7 @@ namespace DatingApp.API.Controllers
         {
             var userFromRepo = await _repo.Login(userForLoginDtos.Username.ToLower(), userForLoginDtos.Password);
 
-            if (userFromRepo == null)
+            if (userFromRepo == null)   
                 return Unauthorized(); // to not give them hint that this user exists but the password is incorrect cause they can try brute force password
 
             //we will build up a token will contain user id and user's username
@@ -75,7 +75,7 @@ namespace DatingApp.API.Controllers
 
             return Ok(new {
                 token = tokenHandler.WriteToken(token)
-            });
+            });  
 
         }
     }
